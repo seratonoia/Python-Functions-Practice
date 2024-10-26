@@ -1,17 +1,18 @@
 def maxNum(vals):
     maxval = numlist[0]
-    for num in range(len(numlist)):
-        for i in range (numbers):
-            if numlist[i] > maxval:
-                maxval = numlist[i]
+    for num in numlist:
+        if num > maxval:
+            maxval = num
     return maxval
     
 
 
 import random
-numlist = []
+
+numlist = [] #holds 10 randomly generated numbers
+
 for i in range (10):
-    numbers = (random.randint(0,100))
+    numbers = random.randint(0,100)
     numlist.append(numbers)
-print(numbers)
-print(maxNum(numbers))
+print(numlist)
+print(maxNum(numbers)) #printing function call
