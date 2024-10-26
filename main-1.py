@@ -4,7 +4,13 @@ def maxNum(vals):
         if num > maxval:
             maxval = num
     return maxval
-    
+
+def minNum(vals):
+    minval = numlist[0]
+    for num in numlist:
+        if num < minval:
+            minval = num
+    return minval
 
 
 import random
@@ -16,3 +22,4 @@ for i in range (10):
     numlist.append(numbers)
 print(numlist)
 print(maxNum(numbers)) #printing function call
+print(minNum(numbers))
